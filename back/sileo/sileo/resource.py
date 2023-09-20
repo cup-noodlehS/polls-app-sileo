@@ -408,8 +408,9 @@ class Resource(object):
         Arguments:
             * obj - the instance that needs to be deleted
         """
-        obj.removed = True
-        obj.save(update_fields=['removed'])
+        # obj.removed = True
+        # obj.save(update_fields=['removed'])
+        obj.delete()
         return {'pk': obj.pk}
 
     def form_to_dict(self, form):
