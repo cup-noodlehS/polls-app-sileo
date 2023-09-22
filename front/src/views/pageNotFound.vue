@@ -1,1 +1,1 @@
-<template>page not found</template>
+<template>page not found <br /><a href="/polls">go to polls</a></template>

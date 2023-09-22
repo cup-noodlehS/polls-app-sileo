@@ -14,6 +14,8 @@ class ChoiceResource(Resource):
     fields = [
         'pk', 'choice_text', 
         ResourceTypeConvert('pub_date', str),
+
+        #nesting a foreign key
         ResourceModel("question", resource=QuestionResource),
         'votes'
         # ResourceModelManager('choices', resource=ChoiceResource)
